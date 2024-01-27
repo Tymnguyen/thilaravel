@@ -1,0 +1,82 @@
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Custom Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px; /* Set the width of the sidebar */
+    background-color: #f8f9fa; /* Light background for sidebar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    z-index: 1000; /* Ensure sidebar is on top */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    padding-top: 20px;
+}
+
+.sidebar .nav-link, .sidebar .nav-item {
+    color: #333; /* Dark text for readability */
+    margin: 10px 15px; /* Spacing around items */
+    font-size: 16px; /* Increase font size for readability */
+    text-decoration: none;
+    display: block; /* Make the links block elements */
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-item:hover {
+    background-color: #e2e6ea; /* Light hover effect */
+    border-radius: 4px; /* Rounded corners for the hover effect */
+    text-decoration: none;
+}
+
+/* Adjust main content padding */
+.content-wrapper {
+    margin-left: 250px; /* Same as the sidebar width */
+    padding: 20px;
+}
+
+/* Custom Sidebar Styles */
+.sidebar {
+    width: 200px; /* Adjust the width of the sidebar */
+    min-height: 100vh; /* Full height */
+    padding: 20px;
+    color: white; /* Light text color */
+}
+
+/* Style for nav items */
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Adjust main content area */
+.content-wrapper {
+    padding: 20px;
+    margin-left: 200px; /* Same as sidebar width */
+}
+
+.navbar {
+    margin-left: 250px; /* Giả sử rằng sidebar có chiều rộng là 250px */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin-left: 0;
+    }
+}
