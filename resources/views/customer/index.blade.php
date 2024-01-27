@@ -54,7 +54,7 @@
                         <td>
                         <a href="{{url('/customer/delete/'.$customer->id)}}" 
                         onclick="return confirm('Are u Sure?')"  class="btn btn-success btn-sm">Xoá</a>
-                            <a href="{{url('/customer/edit')}}" class="btn btn-primary btn-sm">Sửa</a>
+                            <a href="{{url('/customer/edit/'.$customer->id)}}" class="btn btn-primary btn-sm">Sửa</a>
                         </td>
                         </td>
                     </tr>

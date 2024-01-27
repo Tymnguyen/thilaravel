@@ -112,11 +112,11 @@ Route::group(['prefix'=>'customer'],function(){
     Route::get('/orders/{id}',[CustomerController::class, 'orders']);
     Route::get('/add',[CustomerController::class, 'add']);
     Route::get('/delete/{id}',[CustomerController::class, 'delete']);
-    Route::get('/edit',[CustomerController::class, 'edit']);
+    Route::get('/edit/{id}',[CustomerController::class, 'edit']);
     Route::get('/timkiem',[CustomerController::class, 'timkiem']);
 
     Route::post('/save',[CustomerController::class, 'save']);
-    
+    Route::post('/update',[CustomerController::class, 'update']);
 });
 Route::group(['prefix'=>'orders'],function(){
     Route::get('/',[OrdersController::class, 'index']);

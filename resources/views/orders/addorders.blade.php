@@ -45,7 +45,7 @@
 
         <div class="mb-3">
             <label for="customerid" class="form-label">Mã Khách Hàng</label>
-            <input type="text" class="form-control" name="customerid" id="customerid">
+            <input type="text" class="form-control" name="customerid" id="customerid" value="{{ $customerid }}">
         </div>
 
         <button type="submit" class="btn btn-primary">Lưu</button>

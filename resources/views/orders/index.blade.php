@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<a href="{{ url('/orders/index') }}" class="btn btn-secondary ml-2 mb-5">Quay Lại</a>
 <div class="col-md-12">
     <!-- Biểu mẫu tìm kiếm bằng đơn hàng -->
     <div class="card mb-4">

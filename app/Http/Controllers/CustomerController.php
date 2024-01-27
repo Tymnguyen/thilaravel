@@ -84,6 +84,14 @@ class CustomerController extends Controller{
         ];
         return view('customer/edit')->with($data);
     }
+    public function update(Request $request)//quan trong bai thi
+    {
+        $customer = $request->input();
+        unset($customer['_token']);
+        $customer['birthday'] = DateTime::createFromFormat('d/m/Y',$customer['birthday'])->format('Y-m-d');
+        Customer::where('id',$customer['id'])->update($customer);
+        return redirect('customer/index');
+    }
 }
 
 

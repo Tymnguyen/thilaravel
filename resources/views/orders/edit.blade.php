@@ -11,7 +11,7 @@
         });
     });
 </script>
-
+<a href="{{ url('/orders/index') }}" class="btn btn-secondary">Quay Lại</a>
 <div class="content-wrapper">
     <section class="content">
         <div class="container-fluid">
@@ -19,7 +19,7 @@
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Edit Orders</h3>
+                            <h3 class="card-title">Sửa Đơn Hàng</h3>
                         </div>
                         <div class="card-body">
                             <form action="{{ url('/orders/update') }}" method="post">
@@ -81,7 +81,6 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <button type="submit" class="btn btn-primary">Save</button>
-                                        <a href="{{ url('/orders/index') }}" class="btn btn-secondary">Back</a>
                                         <input type="hidden" name="id" value="{{ $orders->id }}">
                                     </div>
                                 </div>
